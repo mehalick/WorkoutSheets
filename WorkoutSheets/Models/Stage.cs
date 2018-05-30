@@ -8,5 +8,6 @@
         public int[] Sets { get; set; }
         public int[] Repeats { get; set; }
         public string[] Exercises { get; set; }
+        public int[] Supersets { get; set; }
     }
 }
