@@ -3,47 +3,35 @@
 <h1>@Model.Title</h1>
 <table id="table" class="table table-bordered">
     <thead>
-    <tr>
-        <th colspan="2">Exercise</th>
-        @for (var week = 0; week < Model.Weeks; week++)
-        {
-            for (var day = 0; day < Model.DaysPerWeek; day++)
+        <tr>
+            <th colspan="2">Exercise</th>
+            @foreach (var i in Model.SetsPerDay)
             {
-                var colspan = Model.Repeats[week] * Model.Sets[week] + Model.Repeats[week];
-
-                <th colspan="@colspan"></th>
-            }             
-        }
-    </tr>
-    </thead>
-    <tbody>
-    @for (var i = 0; i < Model.Exercises.Length; i++)
-    {
-        var cssClass = "";
-
-        if (Model.Supersets.Contains(i + 1))
-        {
-            cssClass = "superset";
-        }
-        
-        <tr class="@cssClass">
-            <th scope="row" class="index">@(i + 1)</th>
-            <td class="exercise">@Model.Exercises[i]</td>           
-            @for (var week = 0; week < Model.Weeks; week++)
-            {
-                for (var day = 0; day < Model.DaysPerWeek; day++)
-                {
-                    for (var repeat = 0; repeat < Model.Repeats[week]; repeat++)
-                    {
-                        <td></td>
-                        for (var set = 0; set < Model.Sets[week]; set++)
-                        {
-                            <td></td>
-                        }
-                    }
-                }
+                <th colspan="@i"></th>
             }
         </tr>
-    }
+    </thead>
+    <tbody>
+        @for (var i = 0; i < Model.Exercises.Count(); i++)
+        {
+            var cssClass = "";
+
+            if (Model.Supersets.Contains(i + 1))
+            {
+                cssClass = "superset";
+            }
+
+            <tr class="@cssClass">
+                <th scope="row" class="index">@(i + 1)</th>
+                <td class="exercise">@Model.Exercises.ElementAt(i)</td>
+                @foreach (var j in Model.SetsPerDay)
+                {
+                    for (var set = 0; set < j; set++)
+                    {
+                        <td></td>
+                    }
+                }
+            </tr>
+        }
     </tbody>
 </table>

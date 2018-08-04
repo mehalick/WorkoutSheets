@@ -5,54 +5,48 @@
         @Html.Partial("_StagePartial", new Stage
         {
             Title = "Stage 2A — Weeks 11 - 13",
-            Weeks = 4,
-            DaysPerWeek = 1,
-            Sets = new[] { 1, 1, 1, 1 },
-            Repeats = new[] { 1, 2, 2, 2 },
+            SetsPerDay = new[] {2, 4, 4, 4, 4},
             Exercises = new[]
             {
                 "Thin Tummy",
                 "Curlup, Arms Straight & Parallel",
                 "Side Raise",
                 "Seated Thin Tummy",
-                
+
                 "Prone Hip-Thigh Extension",
                 "King Deadlift",
-                
+
                 "Static Lunge",
                 "Single Leg Squat",
-                
+
                 "Leg Curl",
                 "Single-Leg Stiff-Legged Deadlift",
-                
+
                 "Leg Extension",
                 "Single-Leg Sqat",
-                
+
                 "Standing Single-Leg Calf Raise",
                 "Seated Calf Raise",
-                
+
                 "Dumbbell Shrug, To Front",
                 "Dumbbell Shrug, Behind Body"
-                
+
             },
             Supersets = new []{ 5, 7, 9, 11, 13, 15 }
         })
     </div>
     <div class="col">
         @Html.Partial("_StagePartial", new Stage
-       {
-           Title = "Stage 2B — Weeks 11 - 13",
-           Weeks = 4,
-           DaysPerWeek = 1,
-           Sets = new[] { 1, 1, 1, 1 },
-           Repeats = new[] { 1, 2, 2, 2 },
-           Exercises = new[]
+        {
+            Title = "Stage 2B — Weeks 11 - 13",
+            SetsPerDay = new[] {2, 4, 4, 4 },
+            Exercises = new[]
             {
                 "Toes to Sky",
                 "Curlup, Legs in Air",
                 "Lateral Leg Lowering",
                 "Pushup Hold, Lift Leg Then Arm",
-                
+
                 "Reverse Dumbell Fly",
                 "Seated Cable Row",
 
@@ -67,11 +61,11 @@
 
                 "Dumbell Wrist Curl",
                 "Dumbell Seated Biceps Curl",
-                
+
                 "Dumbell Wrist Extension",
                 "Dumbell Seated Overhead Triceps Ext"
             },
             Supersets = new[] { 5, 7, 9, 11, 13, 15 }
-   })
+        })
     </div>
 </div>

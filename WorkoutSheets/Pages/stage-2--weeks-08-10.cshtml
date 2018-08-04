@@ -5,10 +5,7 @@
         @Html.Partial("_StagePartial", new Stage
         {
             Title = "Stage 2A — Weeks 8 - 10",
-            Weeks = 4,
-            DaysPerWeek = 1,
-            Sets = new[] { 1, 1, 1, 1 },
-            Repeats = new[] { 1, 1, 2, 2 },
+            SetsPerDay = new[] {2, 4, 4, 4, 4},
             Exercises = new[]
             {
                 "Thin Tummy, Lift One Leg",
@@ -33,13 +30,10 @@
     </div>
     <div class="col">
         @Html.Partial("_StagePartial", new Stage
-       {
-           Title = "Stage 2B — Weeks 8 - 10",
-           Weeks = 4,
-           DaysPerWeek = 1,
-           Sets = new[] { 1, 1, 1, 1 },
-           Repeats = new[] { 1, 1, 2, 2 },
-           Exercises = new[]
+        {
+            Title = "Stage 2B — Weeks 8 - 10",
+            SetsPerDay = new[] {2, 4, 4, 4 },
+            Exercises = new[]
             {
                 "Toes to Sky",
                 "Curlup, Legs in Air Arms Crossed",
@@ -59,6 +53,6 @@
                 "Dumbell Wrist Extension"
             },
             Supersets = new[] { 5, 7, 9, 11, 13, 15 }
-   })
+        })
     </div>
 </div>

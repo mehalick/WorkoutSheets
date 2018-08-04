@@ -1,0 +1,46 @@
+﻿@page
+
+<div class="row">
+    <div class="col">
+        @Html.Partial("_StagePartial", new Stage
+        {
+            Title = "Stage 2A — Weeks 15 - 17",
+            SetsPerDay = new[] {2, 3, 3, 3, 3},
+            Exercises = new[]
+            {
+                "Thin Tummy, Lift One Leg",
+                "Curlup, Hands on Elbows",
+                "Side Raise",
+                "Swiss Ball Alt Leg Lift",
+                "Seated Cable Row",
+                "Barbell Bench Press, Feet on Bench",
+                "Lat Pulldown Behind Neck",
+                "Barbell Seated Shoulder Press",
+                "EZ-Bar Biceps Curl Reverse Grip",
+                "EZ-Bar Lying Triceps Extension",
+            },
+            Supersets = new []{ 5, 7, 9 }
+        })
+    </div>
+    <div class="col">
+        @Html.Partial("_StagePartial", new Stage
+        {
+            Title = "Stage 2B — Weeks 15 - 17",
+            SetsPerDay = new[] {2, 3, 3, 3},
+            Exercises = new[]
+            {
+                "Knee-up",
+                "Barbell Rollout",
+                "Russian Twist",
+                "Swiss-ball Alt Leg Lift",
+                "Barbell Squat",
+                "Deadlift",
+                "Dynamic Lunge",
+                "Supine Hip-thigh Extension",
+                "Standing Calf Raise",
+                "Barbell Shrug"
+            },
+            Supersets = new int[0]
+        })
+    </div>
+</div>
