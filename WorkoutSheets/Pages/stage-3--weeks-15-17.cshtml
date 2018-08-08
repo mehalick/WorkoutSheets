@@ -1,11 +1,22 @@
 ﻿@page
 
+<style media="all">
+    @@page {
+        size: portrait;
+    }
+
+    #table th,
+    #table td {
+        padding: 18px 6px;
+    }
+</style>
+
 <div class="row">
-    <div class="col">
+    <div class="col-12">
         @Html.Partial("_StagePartial", new Stage
         {
-            Title = "Stage 2A — Weeks 15 - 17",
-            SetsPerDay = new[] {2, 3, 3, 3, 3},
+            Title = "Stage 3A — Weeks 15 - 17",
+            SetsPerDay = new[] {4, 6, 6, 6, 6},
             Exercises = new[]
             {
                 "Thin Tummy, Lift One Leg",
@@ -22,11 +33,11 @@
             Supersets = new []{ 5, 7, 9 }
         })
     </div>
-    <div class="col">
+    <div class="col-12">
         @Html.Partial("_StagePartial", new Stage
         {
-            Title = "Stage 2B — Weeks 15 - 17",
-            SetsPerDay = new[] {2, 3, 3, 3},
+            Title = "Stage 3B — Weeks 15 - 17",
+            SetsPerDay = new[] {4, 6, 6, 6, 6},
             Exercises = new[]
             {
                 "Knee-up",

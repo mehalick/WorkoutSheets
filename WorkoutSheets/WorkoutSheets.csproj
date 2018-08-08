@@ -12,9 +12,6 @@
     <None Include="Pages\stage-1--weeks-01-03.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Update="Pages\DisplayTemplates\Stage.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
     <Content Update="Pages\stage-2--weeks-11-13.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
