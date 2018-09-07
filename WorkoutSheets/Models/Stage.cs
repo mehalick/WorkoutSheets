@@ -8,5 +8,6 @@ namespace WorkoutSheets.Models
         public IEnumerable<string> Exercises { get; set; }
         public IEnumerable<int> SetsPerDay { get; set; }
         public IEnumerable<int> Supersets { get; set; } = new List<int>();
+        public bool HighlightColumns { get; set; } = false;
     }
 }

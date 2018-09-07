@@ -28,7 +28,14 @@
                 {
                     for (var set = 0; set < j; set++)
                     {
-                        <td></td>
+                        if (Model.HighlightColumns && set % 2 == 0)
+                        {
+                            <td class="highlight"></td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
                     }
                 }
             </tr>
