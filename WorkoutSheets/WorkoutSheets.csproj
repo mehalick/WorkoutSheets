@@ -15,6 +15,12 @@
     <Content Update="Pages\stage-2--weeks-11-13.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Pages\stage-3--weeks-25-27.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Pages\stage-3--weeks-22-24.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Pages\stage-3--weeks-18-20.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

@@ -1,0 +1,88 @@
+﻿@page
+
+<style media="all">
+    @@page {
+        size: portrait;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #table th,
+    #table td {
+        padding: 10px 6px;
+    }
+</style>
+
+<div class="row">
+    <div class="col-12">
+        @Html.Partial("_StagePartial", new Stage
+        {
+            Title = "Stage 3A — Weeks 25 - 27",
+            SetsPerDay = new[] {6, 6, 6},
+            Exercises = new[]
+            {
+                "Barbell Bench Press",
+                "Barbell Bench Press",
+                "Seated Cable Row",
+                "DB Incline Bench Press",
+                "DB One-arm Row",
+                "Bench Dip",
+                "DB Seated Hammer Curl",
+                "Knee-up Incline",
+                "Curlup, Hands Shoulders",
+                "Russian Twist",
+                "Modified V-sit"
+            },
+            Supersets = new []{ 1, 3, 5, 7 },
+            HighlightColumns = true
+        })
+    </div>
+    <div class="col-12">
+        @Html.Partial("_StagePartial", new Stage
+        {
+            Title = "Stage 3B — Weeks 25 - 27",
+            SetsPerDay = new[] {6, 6, 6},
+            Exercises = new[]
+            {
+                "Barbell Squat",
+                "Barbell Squat",
+                "Deadlift",
+                "Static Lunge",
+                "Good Morning",
+                "Calf Raise",
+                "Barbell Shrug",
+                "Toes to Sky",
+                "Curlup, Legs in Air",
+                "Side Raise Twist",
+                "Pushup Hold"
+            },
+            Supersets = new []{ 1, 5, 7 },
+            HighlightColumns = true
+        })
+    </div>
+        <div class="col-12">
+        @Html.Partial("_StagePartial", new Stage
+        {
+            Title = "Stage 3C — Weeks 25 - 27",
+            SetsPerDay = new[] {6, 6, 6},
+            Exercises = new[]
+            {
+                "Lat Pulldown",
+                "Lat Pulldown",
+                "Shoulder Press",
+                "DB Lying Pullover",
+                "DB Lat Raise",
+                "EZ-Bar Curl",
+                "Triceps Pushdown",
+                "Knee Up, Incline",
+                "Curlup, Arms Straight",
+                "Russian Twist",
+                "Modified V-sit"
+            },
+            Supersets = new []{ 1, 3, 5, 7 },
+            HighlightColumns = true
+        })
+    </div>
+</div>
