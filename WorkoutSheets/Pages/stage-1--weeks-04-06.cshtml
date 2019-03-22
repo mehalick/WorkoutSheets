@@ -1,9 +1,9 @@
 ﻿@page
 
-@Html.Partial("_StagePartial", new Stage
+@await Html.PartialAsync("_StagePartial", new Stage
 {
     Title = "Stage 1 — Weeks 4 - 6",
-    SetsPerDay = new[] {2, 2, 2, 3, 3, 3, 3, 3, 3 },
+    SetsPerDay = new[] { 4, 4, 4, 4, 4, 4, 4, 4, 4 },
     Exercises = new[]
     {
         "Thin Tummy (one leg lift)",
