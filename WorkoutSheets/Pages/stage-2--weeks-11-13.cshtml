@@ -1,71 +1,76 @@
 ﻿@page
+@{
+    var a = new Stage
+    {
+        Title = "Stage 2A — Weeks 11 - 13",
+        SetsPerDay = new[] { 4, 4, 4, 4 },
+        Supersets = new[] { 5, 7, 9, 11, 13, 15 },
+        Exercises = new[]
+        {
+            "Thin Tummy",
+            "Curlup, Arms Straight & Parallel",
+            "Side Raise",
+            "Seated Thin Tummy",
+
+            "Prone Hip-Thigh Extension",
+            "King Deadlift",
+
+            "Static Lunge",
+            "Single Leg Squat",
+
+            "Leg Curl",
+            "Single-Leg Stiff-Legged Deadlift",
+
+            "Leg Extension",
+            "Single-Leg Squat",
+
+            "Standing Single-Leg Calf Raise",
+            "Seated Calf Raise",
+
+            "Dumbbell Shrug, To Front",
+            "Dumbbell Shrug, Behind Body"
+
+        }
+    };
+
+    var b = new Stage
+    {
+        Title = "Stage 2B — Weeks 11 - 13",
+        SetsPerDay = new[] { 4, 4, 4, 4 },
+        Supersets = new[] { 5, 7, 9, 11, 13, 15 },
+        Exercises = new[]
+        {
+            "Toes to Sky",
+            "Curlup, Legs in Air",
+            "Lateral Leg Lowering",
+            "Pushup Hold, Lift Leg Then Arm",
+
+            "Reverse Dumbbell Fly",
+            "Seated Cable Row",
+
+            "Dumbbell Fly",
+            "Barbell Bench Press",
+
+            "Dumbbell Lying Pullover",
+            "Lat Pulldown",
+
+            "Dumbbell Seated Lateral Raise",
+            "Barbell Seated Shoulder Press",
+
+            "Dumbbell Wrist Curl",
+            "Dumbbell Seated Biceps Curl",
+
+            "Dumbbell Wrist Extension",
+            "Dumbbell Seated Overhead Triceps Ext"
+        }
+    };
+}
 
 <div class="row">
     <div class="col">
-        @Html.Partial("_StagePartial", new Stage
-        {
-            Title = "Stage 2A — Weeks 11 - 13",
-            SetsPerDay = new[] {2, 4, 4, 4, 4},
-            Exercises = new[]
-            {
-                "Thin Tummy",
-                "Curlup, Arms Straight & Parallel",
-                "Side Raise",
-                "Seated Thin Tummy",
-
-                "Prone Hip-Thigh Extension",
-                "King Deadlift",
-
-                "Static Lunge",
-                "Single Leg Squat",
-
-                "Leg Curl",
-                "Single-Leg Stiff-Legged Deadlift",
-
-                "Leg Extension",
-                "Single-Leg Sqat",
-
-                "Standing Single-Leg Calf Raise",
-                "Seated Calf Raise",
-
-                "Dumbbell Shrug, To Front",
-                "Dumbbell Shrug, Behind Body"
-
-            },
-            Supersets = new []{ 5, 7, 9, 11, 13, 15 }
-        })
+        <partial name="_StagePartial" model="a" />
     </div>
     <div class="col">
-        @Html.Partial("_StagePartial", new Stage
-        {
-            Title = "Stage 2B — Weeks 11 - 13",
-            SetsPerDay = new[] {2, 4, 4, 4 },
-            Exercises = new[]
-            {
-                "Toes to Sky",
-                "Curlup, Legs in Air",
-                "Lateral Leg Lowering",
-                "Pushup Hold, Lift Leg Then Arm",
-
-                "Reverse Dumbell Fly",
-                "Seated Cable Row",
-
-                "Dumbell Fly",
-                "Barbell Bench Press",
-
-                "Dumbell Lying Pullover",
-                "Lat Pulldown",
-
-                "Dumbell Seated Lateral Raise",
-                "Barbell Seated Shoulder Press",
-
-                "Dumbell Wrist Curl",
-                "Dumbell Seated Biceps Curl",
-
-                "Dumbell Wrist Extension",
-                "Dumbell Seated Overhead Triceps Ext"
-            },
-            Supersets = new[] { 5, 7, 9, 11, 13, 15 }
-        })
+        <partial name="_StagePartial" model="b" />
     </div>
 </div>

@@ -1,12 +1,69 @@
 ﻿@page
+@{
+    var a = new Stage
+    {
+        Title = "Stage 3A — Weeks 22 - 24",
+        SetsPerDay = new[] { 8, 8, 8 },
+        Supersets = new[] { 1, 3, 5, 7 },
+        Exercises = new[]
+        {
+            "Barbell Bench Press",
+            "Seated Cable Row",
+            "DB Incline Bench Press",
+            "DB One-arm Row",
+            "Bench Dip",
+            "DB Seated Hammer Curl",
+            "Knee-up Incline",
+            "Curlup, Hands Shoulders",
+            "Russian Twist",
+            "Modified V-sit"
+        }
+    };
+
+    var b = new Stage
+    {
+        Title = "Stage 3B — Weeks 22 - 24",
+        SetsPerDay = new[] { 8, 8, 8 },
+        Supersets = new[] { 1, 5, 7 },
+        Exercises = new[]
+        {
+            "Barbell Squat",
+            "Deadlift",
+            "Static Lunge",
+            "Good Morning",
+            "Calf Raise",
+            "Barbell Shrug",
+            "Toes to Sky",
+            "Curlup, Legs in Air",
+            "Side Raise Twist",
+            "Pushup Hold"
+        }
+    };
+
+    var c = new Stage
+    {
+        Title = "Stage 3C — Weeks 22 - 24",
+        SetsPerDay = new[] { 8, 8, 8 },
+        Supersets = new[] { 1, 3, 5, 7 },
+        Exercises = new[]
+        {
+            "Lat Pulldown",
+            "Shoulder Press",
+            "DB Lying Pullover",
+            "DB Lat Raise",
+            "EZ-Bar Curl",
+            "Triceps Pushdown",
+            "Knee Up, Incline",
+            "Curlup, Airs Straight",
+            "Russian Twist",
+            "Modified V-sit"
+        }
+    };
+}
 
 <style media="all">
     @@page {
         size: portrait;
-    }
-
-    h1 {
-        display: none;
     }
 
     #table th,
@@ -17,69 +74,12 @@
 
 <div class="row">
     <div class="col-12">
-        @Html.Partial("_StagePartial", new Stage
-        {
-            Title = "Stage 3A — Weeks 22 - 24",
-            SetsPerDay = new[] {8, 8, 8},
-            Exercises = new[]
-            {
-                "Barbell Bench Press",
-                "Seated Cable Row",
-                "DB Incline Bench Press",
-                "DB One-arm Row",
-                "Bench Dip",
-                "DB Seated Hammer Curl",
-                "Knee-up Incline",
-                "Curlup, Hands Shoulders",
-                "Russian Twist",
-                "Modified V-sit"
-            },
-            Supersets = new []{ 1, 3, 5, 7 },
-            HighlightColumns = true
-        })
+        <partial name="_StagePartial" model="a" />
     </div>
     <div class="col-12">
-        @Html.Partial("_StagePartial", new Stage
-        {
-            Title = "Stage 3B — Weeks 22 - 24",
-            SetsPerDay = new[] {8, 8, 8},
-            Exercises = new[]
-            {
-                "Barbell Squat",
-                "Deadlift",
-                "Static Lunge",
-                "Good Morning",
-                "Calf Raise",
-                "Barbell Shrug",
-                "Toes to Sky",
-                "Curlup, Legs in Air",
-                "Side Raise Twist",
-                "Pushup Hold"
-            },
-            Supersets = new []{ 1, 5, 7 },
-            HighlightColumns = true
-        })
+        <partial name="_StagePartial" model="b" />
     </div>
-        <div class="col-12">
-        @Html.Partial("_StagePartial", new Stage
-        {
-            Title = "Stage 3C — Weeks 22 - 24",
-            SetsPerDay = new[] {8, 8, 8},
-            Exercises = new[]
-            {
-                "Lat Pulldown",
-                "Shoulder Press",
-                "DB Lying Pullover",
-                "DB Lat Raise",
-                "EZ-Bar Curl",
-                "Triceps Pushdown",
-                "Knee Up, Incline",
-                "Curlup, Airs Straight",
-                "Russian Twist",
-                "Modified V-sit"
-            },
-            Supersets = new []{ 1, 3, 5, 7 },
-            HighlightColumns = true
-        })
+    <div class="col-12">
+        <partial name="_StagePartial" model="c" />
     </div>
 </div>

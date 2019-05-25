@@ -1,22 +1,25 @@
 ﻿@page
-
-@await Html.PartialAsync("_StagePartial", new Stage
-{
-    Title = "Stage 1 — Weeks 1 - 3",
-    SetsPerDay = new[] { 2, 2, 2, 4, 4, 4, 4, 4, 4 },
-    Exercises = new[]
+@{
+    var a = new Stage
     {
-        "Thin Tummy",
-        "Static Lunge",
-        "Dumbbell Lying Row",
-        "Dumbbell Upright Row",
-        "Curlup (cheat)",
-        "Dumbbell Bench Step",
-        "Dumbbell Lying Pullover",
-        "Dumbbell Bench Press",
-        "Pushup Hold",
-        "Single-leg Calf Raise",
-        "Dumbbell Seated Curl",
-        "Dumbbell Triceps"
-    }
-})
+        Title = "Stage 1 — Weeks 1 - 3",
+        SetsPerDay = new[] { 2, 2, 2, 4, 4, 4, 4, 4, 4 },
+        Exercises = new[]
+        {
+            "Thin Tummy",
+            "Static Lunge",
+            "Dumbbell Lying Row",
+            "Dumbbell Upright Row",
+            "Curlup (cheat)",
+            "Dumbbell Bench Step",
+            "Dumbbell Lying Pullover",
+            "Dumbbell Bench Press",
+            "Pushup Hold",
+            "Single-leg Calf Raise",
+            "Dumbbell Seated Curl",
+            "Dumbbell Triceps"
+        }
+    };
+}
+
+<partial name="_StagePartial" model="a" />
