@@ -1,0 +1,8 @@
+﻿@model Week
+
+<table class="table table-bordered">
+	@foreach (var workout in Model.Workouts)
+	{
+		<partial name="_WorkoutPartial" model="workout"/>
+	}
+</table>

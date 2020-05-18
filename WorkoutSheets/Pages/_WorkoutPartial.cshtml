@@ -1,0 +1,44 @@
+﻿@model Workout
+
+<thead>
+	<tr>
+		<th colspan="2">Workout @Model.Letter</th>
+		@foreach (var i in Model.ColumnsPerDay)
+		{
+			<th colspan="@i"></th>
+		}
+	</tr>
+</thead>
+<tbody>
+
+	@{
+		var index = 1;
+	}
+
+	@foreach (var superSet in Model.SuperSets)
+	{
+		for (var i = 0; i < superSet.Count(); i++)
+		{
+			var cssClass = "";
+			if (i == 0)
+			{
+				cssClass = "superset";
+			}
+			<tr class="@cssClass">
+				<th scope="row" class="index">@(index++)</th>
+				<td class="exercise">@superSet.ElementAt(i)</td>
+				@for (var k = 0; k < Model.ColumnsPerDay.Sum(); k++)
+				{
+					if (k % 2 == 0)
+					{
+						<td class="highlight"></td>
+					}
+					else
+					{
+						<td></td>
+					}
+				}
+			</tr>
+		}
+	}
+</tbody>
