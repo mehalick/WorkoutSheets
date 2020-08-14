@@ -25,7 +25,7 @@
 				cssClass = "superset";
 			}
 			<tr class="@cssClass">
-				<th scope="row" class="index">@(index++)</th>
+				<td scope="row" class="index">@(index++)</td>
 				<td class="exercise">@superSet.ElementAt(i)</td>
 				@for (var k = 0; k < Model.ColumnsPerDay.Sum(); k++)
 				{

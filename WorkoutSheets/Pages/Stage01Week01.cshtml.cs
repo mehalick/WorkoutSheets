@@ -36,7 +36,7 @@ namespace WorkoutSheets.Pages
 						new []{ "EZ Curl (Wide Grip)", "EZ Curl (Reverse Grip)", "EZ Curl (Close Grip)" },
 						new []{ "Triceps Pushdown (Reverse)", "Triceps Pushdown (Wide)", "Triceps Pushdown (Neutral)" },
 						new []{ "Leg Curl", "Leg Extension" },
-						new []{ "Single-lef Deadlift", "Single-leg Squat" },
+						new []{ "Single-leg Deadlift", "Single-leg Squat" },
 						new []{ "Kind Deadlift", "Single-leg Squat" },
 						new []{ "Deadlift", "Barbell Squat" },
 					}

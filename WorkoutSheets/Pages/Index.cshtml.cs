@@ -6,22 +6,22 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WorkoutSheets.Pages
 {
-    public class IndexModel : PageModel
-    {
-        private readonly IHostingEnvironment _hostingEnvironment;
+	public class IndexModel : PageModel
+	{
+		private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public IEnumerable<string> Files { get; private set; }
+		public IEnumerable<string> Files { get; private set; }
 
-        public IndexModel(IHostingEnvironment hostingEnvironment)
-        {
-            _hostingEnvironment = hostingEnvironment;
-        }
+		public IndexModel(IWebHostEnvironment hostingEnvironment)
+		{
+			_hostingEnvironment = hostingEnvironment;
+		}
 
-        public void OnGet()
-        {
-            var path = Path.Combine(_hostingEnvironment.ContentRootPath, @"Pages");
+		public void OnGet()
+		{
+			var path = Path.Combine(_hostingEnvironment.ContentRootPath, "Pages");
 
-            Files = Directory.EnumerateFiles(path, "stage-*.cshtml").Select(Path.GetFileNameWithoutExtension);
-        }
-    }
+			Files = Directory.EnumerateFiles(path, "stage*.cshtml").Select(Path.GetFileNameWithoutExtension);
+		}
+	}
 }

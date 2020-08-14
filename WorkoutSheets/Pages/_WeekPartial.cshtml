@@ -1,8 +1,10 @@
 ﻿@model Week
 
+<h1>Stage @Model.Stage &mdash; Weeks @Model.WeekRange.Start - @Model.WeekRange.End</h1>
+
 <table class="table table-bordered">
 	@foreach (var workout in Model.Workouts)
 	{
-		<partial name="_WorkoutPartial" model="workout"/>
+		<partial name="_WorkoutPartial" model="workout" />
 	}
 </table>
