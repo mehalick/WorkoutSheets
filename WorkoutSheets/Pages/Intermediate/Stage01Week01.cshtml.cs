@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using WorkoutSheets.Models;
 
-namespace WorkoutSheets.Pages
+namespace WorkoutSheets.Pages.Intermediate
 {
 	public class Stage01Week01Model : PageModel
 	{

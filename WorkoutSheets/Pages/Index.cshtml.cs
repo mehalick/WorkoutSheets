@@ -10,7 +10,7 @@ namespace WorkoutSheets.Pages
 	{
 		private readonly IWebHostEnvironment _hostingEnvironment;
 
-		public IEnumerable<string> Files { get; private set; }
+		public List<string> Files { get; } = new List<string>();
 
 		public IndexModel(IWebHostEnvironment hostingEnvironment)
 		{
@@ -19,9 +19,17 @@ namespace WorkoutSheets.Pages
 
 		public void OnGet()
 		{
-			var path = Path.Combine(_hostingEnvironment.ContentRootPath, "Pages");
+			Files.AddRange(GetFiles("Beginner"));
+			Files.AddRange(GetFiles("Intermediate"));
+		}
 
-			Files = Directory.EnumerateFiles(path, "stage*.cshtml").Select(Path.GetFileNameWithoutExtension);
+		private IEnumerable<string> GetFiles(string folder)
+		{
+			var path = Path.Combine(_hostingEnvironment.ContentRootPath, "Pages", folder);
+
+			return Directory
+				.EnumerateFiles(path, "*.cshtml")
+				.Select(i => $"{folder}/{Path.GetFileNameWithoutExtension(i)}");
 		}
 	}
 }

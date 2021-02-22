@@ -1,6 +1,12 @@
 ﻿@model Week
 
-<h1>Stage @Model.Stage &mdash; Weeks @Model.WeekRange.Start - @Model.WeekRange.End</h1>
+<style media="print">
+	@@page {
+		size: @Model.PrintSize.ToString().ToLowerInvariant();
+	}
+</style>
+
+<h1>@Model.Program | Stage @Model.Stage | Weeks @Model.WeekRange.Start - @Model.WeekRange.End</h1>
 
 <table class="table table-bordered">
 	@foreach (var workout in Model.Workouts)

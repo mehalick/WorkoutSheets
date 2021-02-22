@@ -16,6 +16,7 @@ namespace WorkoutSheets.Models
 		public Program Program { get; set; }
 		public int Stage { get; set; }
 		public WeekRange WeekRange { get; set; }
+		public PrintSize PrintSize { get; set; } = PrintSize.Landscape;
 		public IEnumerable<Workout> Workouts { get; set; }
 	}
 
@@ -29,6 +30,11 @@ namespace WorkoutSheets.Models
 	public enum Program
 	{
 		Beginner, Intermediate, Advanced
+	}
+
+	public enum PrintSize
+	{
+		Landscape, Portrait
 	}
 
 	public readonly struct WeekRange

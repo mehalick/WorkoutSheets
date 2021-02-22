@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using WorkoutSheets.Models;
 
-namespace WorkoutSheets.Pages
+namespace WorkoutSheets.Pages.Intermediate
 {
-    public class Stage03Week15Model : PageModel
-    {
-        public Week Week = new Week
+	public class Stage03Week15Model : PageModel
+	{
+		public Week Week = new Week
 		{
 			Program = Models.Program.Intermediate,
 			Stage = 3,
@@ -44,5 +44,5 @@ namespace WorkoutSheets.Pages
 				}
 			}
 		};
-    }
+	}
 }
