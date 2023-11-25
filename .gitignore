@@ -1,11 +1,7 @@
-*.swp
-*.*~
-project.lock.json
-.DS_Store
-*.pyc
-
-# Visual Studio Code
-.vscode
+# IDEs
+.vs/
+.vscode/
+.idea/
 
 # User-specific files
 *.suo
@@ -28,6 +24,9 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+artifacts/
 
-# Visual Studio 2015
-.vs/
+# NPM
+node_modules
+**/wwwroot/dist/
+**/publish/

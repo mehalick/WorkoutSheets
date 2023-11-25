@@ -19,7 +19,7 @@ public class Stage01Week04Model : PageModel
 					new[]
 					{
 						"Thin Tummy (one leg lift)",
-						//"Static Lunge",
+						"Static Lunge",
 						"Leg Press",
 						"Dumbbell Lying Row",
 						"Dumbbell Upright Row"
@@ -27,14 +27,14 @@ public class Stage01Week04Model : PageModel
 					new[]
 					{
 						"Curlup (arms parallel)",
-						//"Dumbbell Bench Step",
+						"Dumbbell Bench Step",
 						"Leg Curl",
 						"Dumbbell Lying Pullover",
 						"Dumbbell Bench Press"
 					},
 					new[]
 					{
-						//"Pushup Hold",
+						"Pushup Hold",
 						"Leg Extension",
 						"Single-leg Calf Raise",
 						"Dumbbell Seated Curl",

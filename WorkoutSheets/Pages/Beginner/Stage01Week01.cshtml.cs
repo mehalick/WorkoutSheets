@@ -26,7 +26,7 @@ public class Stage01Week01Model : PageModel
 						"Dumbbell Bench Step",
 						"Dumbbell Lying Pullover",
 						"Dumbbell Bench Press",
-						"Pushup Hold",
+						"Push-up Hold",
 						"Single-leg Calf Raise",
 						"Dumbbell Seated Curl",
 						"Dumbbell Triceps"
