@@ -7,41 +7,41 @@ public class Stage02Week11Model : PageModel
 		Program = Models.Program.Intermediate,
 		Stage = 2,
 		WeekRange = new(11, 13),
-		Workouts = new[]
-		{
+		Workouts =
+		[
 			new Workout
 			{
 				Letter = "A",
-				ColumnsPerDay = new []{ 6, 6, 6 },
-				SuperSets = new []
-				{
-					new []{ "Modified V-sit", "Knee-Up", "Curlup", "Russian Twist", "Side Raise" },
-					new []{ "Shoulder Press", "Shoulder Press", "Barbell Squat", "Barbell Squat" },
-					new []{ "Barbell Shrug" }
-				}
+				ColumnsPerDay = [6, 6, 6],
+				SuperSets =
+				[
+					["Modified V-sit", "Knee-Up", "Curlup", "Russian Twist", "Side Raise"],
+					["Shoulder Press", "Shoulder Press", "Barbell Squat", "Barbell Squat"],
+					["Barbell Shrug"]
+				]
 			},
 			new Workout
 			{
 				Letter = "B",
-				ColumnsPerDay = new []{ 6, 6, 6 },
-				SuperSets = new []
-				{
-					new []{ "Knee-Up", "Curlup", "Lat Leg Lowering", "Side Raise", "Pushup Hold" },
-					new []{ "Bent Over Row", "Bent Over Row","Bench Press","Bench Press" },
-					new []{ "DB Hammer Curl" }
-				}
+				ColumnsPerDay = [6, 6, 6],
+				SuperSets =
+				[
+					["Knee-Up", "Curlup", "Lat Leg Lowering", "Side Raise", "Pushup Hold"],
+					["Bent Over Row", "Bent Over Row","Bench Press","Bench Press"],
+					["DB Hammer Curl"]
+				]
 			},
 			new Workout
 			{
 				Letter = "C",
-				ColumnsPerDay = new []{ 6, 6, 6 },
-				SuperSets = new []
-				{
-					new []{ "Knee-Up", "Barbell Rollout", "Side Raise", "Russian Twist", "Curlup" },
-					new []{ "Chinup", "Chinup", "Deadlift", "Deadlift" },
-					new []{ "Calf Raise" }
-				}
+				ColumnsPerDay = [6, 6, 6],
+				SuperSets =
+				[
+					["Knee-Up", "Barbell Rollout", "Side Raise", "Russian Twist", "Curlup"],
+					["Chinup", "Chinup", "Deadlift", "Deadlift"],
+					["Calf Raise"]
+				]
 			}
-		}
+		]
 	};
 }

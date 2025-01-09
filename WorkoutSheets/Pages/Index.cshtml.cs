@@ -4,7 +4,7 @@ public class IndexModel : PageModel
 {
 	private readonly IWebHostEnvironment _hostingEnvironment;
 
-	public List<string> Files { get; } = new();
+	public List<string> Files { get; } = [];
 
 	public IndexModel(IWebHostEnvironment hostingEnvironment)
 	{

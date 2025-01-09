@@ -8,16 +8,15 @@ public class Stage01Week01Model : PageModel
 		Stage = 1,
 		WeekRange = new(1, 3),
 		PrintSize = PrintSize.Landscape,
-		Workouts = new[]
-		{
+		Workouts =
+		[
 			new Workout
 			{
 				Letter = "A",
-				ColumnsPerDay = new []{ 4, 4, 4, 4, 4, 4, 4, 4, 4 },
-				SuperSets = new []
-				{
-					new[]
-					{
+				ColumnsPerDay = [4, 4, 4, 4, 4, 4, 4, 4, 4],
+				SuperSets =
+				[
+					[
 						"Thin Tummy",
 						"Static Lunge",
 						"Dumbbell Lying Row",
@@ -30,9 +29,9 @@ public class Stage01Week01Model : PageModel
 						"Single-leg Calf Raise",
 						"Dumbbell Seated Curl",
 						"Dumbbell Triceps"
-					}
-				}
+					]
+				]
 			}
-		}
+		]
 	};
 }

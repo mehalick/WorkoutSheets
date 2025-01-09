@@ -7,51 +7,51 @@ public class Stage01Week01Model : PageModel
 		Program = Models.Program.Intermediate,
 		Stage = 1,
 		WeekRange = new(1, 3),
-		Workouts = new[]
-		{
+		Workouts =
+		[
 			new Workout
 			{
 				Letter = "A",
-				ColumnsPerDay = new []{ 4, 4, 4, 4, 4, 4, 4, 4, 4 },
-				SuperSets = new []
-				{
-					new []{ "Thin Tummy", "Curlup, Arms Parallel", "Russian Twist", "Pushup Hold" },
-					new []{ "Standing Single-leg Calf", "Calf Raise Leg Press", "Seated Single-leg Calf" },
-					new []{ "DB Wrist Curl", "DB Wrist Ext" },
-					new []{ "DB Lying Pullover", "DB Seated Lat Raise" },
-					new []{ "DB Seated Shoulder Press", "Lat Pulldown (Behind Neck)" },
-					new []{ "BB Seated Shoulder Press", "Lat Pulldown" },
-				}
+				ColumnsPerDay = [4, 4, 4, 4, 4, 4, 4, 4, 4],
+				SuperSets =
+				[
+					["Thin Tummy", "Curlup, Arms Parallel", "Russian Twist", "Pushup Hold"],
+					["Standing Single-leg Calf", "Calf Raise Leg Press", "Seated Single-leg Calf"],
+					["DB Wrist Curl", "DB Wrist Ext"],
+					["DB Lying Pullover", "DB Seated Lat Raise"],
+					["DB Seated Shoulder Press", "Lat Pulldown (Behind Neck)"],
+					["BB Seated Shoulder Press", "Lat Pulldown"]
+				]
 			},
 			new Workout
 			{
 				Letter = "B",
-				ColumnsPerDay = new []{4, 4, 4},
-				SuperSets = new []
-				{
-					new []{ "Toes to Sky", "Curlup, Legs in Air", "Side Raise", "Seated Thin Tummy" },
-					new []{ "EZ Curl (Wide Grip)", "EZ Curl (Reverse Grip)", "EZ Curl (Close Grip)" },
-					new []{ "Triceps Pushdown (Reverse)", "Triceps Pushdown (Wide)", "Triceps Pushdown (Neutral)" },
-					new []{ "Leg Curl", "Leg Extension" },
-					new []{ "Single-leg Deadlift", "Single-leg Squat" },
-					new []{ "Kind Deadlift", "Single-leg Squat" },
-					new []{ "Deadlift", "Barbell Squat" },
-				}
+				ColumnsPerDay = [4, 4, 4],
+				SuperSets =
+				[
+					["Toes to Sky", "Curlup, Legs in Air", "Side Raise", "Seated Thin Tummy"],
+					["EZ Curl (Wide Grip)", "EZ Curl (Reverse Grip)", "EZ Curl (Close Grip)"],
+					["Triceps Pushdown (Reverse)", "Triceps Pushdown (Wide)", "Triceps Pushdown (Neutral)"],
+					["Leg Curl", "Leg Extension"],
+					["Single-leg Deadlift", "Single-leg Squat"],
+					["Kind Deadlift", "Single-leg Squat"],
+					["Deadlift", "Barbell Squat"]
+				]
 			},
 			new Workout
 			{
 				Letter = "C",
-				ColumnsPerDay = new []{4, 4, 4},
-				SuperSets = new []
-				{
-					new []{ "Thin Tummy", "Curlup, Arms Parallel", "Russian Twist", "Pushup Hold" },
-					new []{ "DB Shrug (Behind Body)", "DB Shrug", "DB Shrug (To Front)" },
-					new []{ "BB Wrist Ext", "BB Wrist Curl" },
-					new []{ "Reverse DB Fly", "DB Fly" },
-					new []{ "DB One-arm Row", "DB Incline Press" },
-					new []{ "Seated Cable Row", "Bench Press" },
-				}
+				ColumnsPerDay = [4, 4, 4],
+				SuperSets =
+				[
+					["Thin Tummy", "Curlup, Arms Parallel", "Russian Twist", "Pushup Hold"],
+					["DB Shrug (Behind Body)", "DB Shrug", "DB Shrug (To Front)"],
+					["BB Wrist Ext", "BB Wrist Curl"],
+					["Reverse DB Fly", "DB Fly"],
+					["DB One-arm Row", "DB Incline Press"],
+					["Seated Cable Row", "Bench Press"]
+				]
 			}
-		}
+		]
 	};
 }

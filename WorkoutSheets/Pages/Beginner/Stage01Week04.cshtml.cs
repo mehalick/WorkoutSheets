@@ -8,40 +8,37 @@ public class Stage01Week04Model : PageModel
 		Stage = 1,
 		WeekRange = new(4, 6),
 		PrintSize = PrintSize.Landscape,
-		Workouts = new[]
-		{
+		Workouts =
+		[
 			new Workout
 			{
 				Letter = "A",
-				ColumnsPerDay = new []{ 4, 4, 4, 4, 4, 4, 4, 4, 4 },
-				SuperSets = new []
-				{
-					new[]
-					{
+				ColumnsPerDay = [4, 4, 4, 4, 4, 4, 4, 4, 4],
+				SuperSets =
+				[
+					[
 						"Thin Tummy (one leg lift)",
 						"Static Lunge",
 						"Leg Press",
 						"Dumbbell Lying Row",
 						"Dumbbell Upright Row"
-					},
-					new[]
-					{
+					],
+					[
 						"Curlup (arms parallel)",
 						"Dumbbell Bench Step",
 						"Leg Curl",
 						"Dumbbell Lying Pullover",
 						"Dumbbell Bench Press"
-					},
-					new[]
-					{
+					],
+					[
 						"Pushup Hold",
 						"Leg Extension",
 						"Single-leg Calf Raise",
 						"Dumbbell Seated Curl",
 						"Dumbbell Triceps"
-					}
-				}
+					]
+				]
 			}
-		}
+		]
 	};
 }
