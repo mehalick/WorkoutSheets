@@ -10,14 +10,12 @@
 	</tr>
 </thead>
 <tbody>
-
 	@{
 		var index = 1;
 	}
-
 	@foreach (var superSet in Model.SuperSets)
 	{
-		for (var i = 0; i < superSet.Count(); i++)
+		for (var i = 0; i < superSet.Count; i++)
 		{
 			var cssClass = "";
 			if (i == 0)
@@ -42,3 +40,12 @@
 		}
 	}
 </tbody>
+<tfoot>
+<tr>
+	<td colspan="2">&nbsp;</td>
+	@for (var i = 0; i < 18; i++)
+	{
+		<td colspan="2"></td>
+	}
+</tr>
+</tfoot>

@@ -1,0 +1,61 @@
+﻿@page {
+	size: portrait;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 25px;
+}
+
+h1 {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.table th {
+	font-size: 12px;
+}
+
+.table th,
+.table td {
+	padding: 12px 6px;
+}
+
+.table tbody {
+	font-size: 50%;
+}
+
+.table tfoot td {
+	border-top-width: 2px;
+}
+
+.table .index,
+.table .exercise {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.table .index {
+	text-align: center;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.table tr.superset th,
+.table tr.superset td {
+	border-top-width: 6px !important;
+}
+
+.table .highlight {
+	background-color: #e9ecef !important;
+}
+
+.copyright {
+	text-align: right;
+	font-size: 60%;
+}
+
+.diagonal-background {
+	background-image: linear-gradient(55deg, white 45.45%, #666666 45.45%, #666666 50%, white 50%, white 95.45%, #666666 95.45%, #666666 100%);
+	background-size: 13.43px 19.18px;
+}

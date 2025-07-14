@@ -1,75 +1,21 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Workouts</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha256-Md8eaeo67OiouuXAi8t/Xpd8t2+IaJezATVTWbZqSOw=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-    <style media="all">
-
-        @@page {
-            size: portrait;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 25px;
-        }
-
-        h1 {
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
-
-        .table th {
-	        font-size: 12px;
-        }
-
-        .table th,
-        .table td {
-            padding: 12px 6px;
-        }
-
-        .table tbody {
-            font-size: 50%;
-        }
-
-        .table .index,
-        .table .exercise {
-            width: 1%;
-            white-space: nowrap;
-        }
-
-        .table .index {
-            text-align: center;
-            padding-left: 4px;
-            padding-right: 4px;
-        }
-
-        .table tr.superset th,
-        .table tr.superset td {
-            border-top-width: 6px !important;
-        }
-
-        .table .highlight {
-            background-color: #e9ecef !important;
-        }
-
-        .copyright {
-            text-align: right;
-            font-size: 60%;
-        }
-    </style>
-    <style media="print">
-	    body {
-            margin: 0;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Workouts</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha256-Md8eaeo67OiouuXAi8t/Xpd8t2+IaJezATVTWbZqSOw=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+	<link rel="stylesheet" href="/site.css" media="all" asp-append-version="true">
+	<style media="print">
+		body {
+			margin: 0;
+		}
+	</style>
 </head>
 <body>
-    @RenderBody()
-    <p class="copyright">&copy; @DateTime.Today.Year Andy Mehalick</p>
+	@RenderBody()
+	<p class="copyright">&copy; @DateTime.Today.Year Andy Mehalick</p>
 </body>
 </html>

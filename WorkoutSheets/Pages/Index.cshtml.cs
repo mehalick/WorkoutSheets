@@ -1,10 +1,12 @@
-﻿namespace WorkoutSheets.Pages;
+﻿using Humanizer;
+
+namespace WorkoutSheets.Pages;
 
 public class IndexModel : PageModel
 {
 	private readonly IWebHostEnvironment _hostingEnvironment;
 
-	public List<string> Files { get; } = [];
+	public List<File> Files { get; } = [];
 
 	public IndexModel(IWebHostEnvironment hostingEnvironment)
 	{
@@ -17,12 +19,15 @@ public class IndexModel : PageModel
 		Files.AddRange(GetFiles("Intermediate"));
 	}
 
-	private IEnumerable<string> GetFiles(string folder)
+	private IEnumerable<File> GetFiles(string folder)
 	{
 		var path = Path.Combine(_hostingEnvironment.ContentRootPath, "Pages", folder);
 
 		return Directory
 			.EnumerateFiles(path, "*.cshtml")
-			.Select(i => $"{folder}/{Path.GetFileNameWithoutExtension(i)}");
+			.Select(Path.GetFileNameWithoutExtension)
+			.Select(i => new File($"{folder} - {i.Humanize(LetterCasing.Title)}", $"{folder}/{i}"));
 	}
 }
+
+public record File(string Name, string Path);

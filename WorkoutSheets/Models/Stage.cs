@@ -22,7 +22,7 @@ public record Workout
 {
 	public string Letter { get; init; } = "";
 	public IEnumerable<int> ColumnsPerDay { get; init; } = Array.Empty<int>();
-	public IEnumerable<IEnumerable<string>> SuperSets { get; init; } = new List<IEnumerable<string>>();
+	public List<List<string>> SuperSets { get; init; } = [];
 }
 
 public enum Program

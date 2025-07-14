@@ -2,8 +2,8 @@
 @model IndexModel
 
 <ul>
-    @foreach (var file in Model.Files)
-    {
-        <li><a asp-page="@file">@file</a></li>
-    }
+	@foreach (var file in Model.Files)
+	{
+		<li><a asp-page="@file.Path">@file.Name</a></li>
+	}
 </ul>
