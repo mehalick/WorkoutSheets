@@ -26,7 +26,7 @@ public class IndexModel : PageModel
 		return Directory
 			.EnumerateFiles(path, "*.cshtml")
 			.Select(Path.GetFileNameWithoutExtension)
-			.Select(i => new File($"{folder} - {i.Humanize(LetterCasing.Title)}", $"{folder}/{i}"));
+			.Select(i => new File($"{folder} - {(i ?? "").Humanize(LetterCasing.Title)}", $"{folder}/{i}"));
 	}
 }
 
