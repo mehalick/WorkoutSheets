@@ -9,7 +9,7 @@ public class Stage01Week04Model : PageModel
 		WeekRange = new(4, 6),
 		Workouts =
 		[
-			new Workout
+			new()
 			{
 				Letter = "A",
 				ColumnsPerDay = [6, 6, 6],
@@ -23,7 +23,7 @@ public class Stage01Week04Model : PageModel
 					["Lat Pulldown (Neutral Grip)"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "B",
 				ColumnsPerDay = [6, 6, 6],
@@ -37,7 +37,7 @@ public class Stage01Week04Model : PageModel
 					["Standing Calf Raise"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "C",
 				ColumnsPerDay = [6, 6, 6],

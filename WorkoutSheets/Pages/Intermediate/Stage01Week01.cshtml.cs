@@ -9,7 +9,7 @@ public class Stage01Week01Model : PageModel
 		WeekRange = new(1, 3),
 		Workouts =
 		[
-			new Workout
+			new()
 			{
 				Letter = "A",
 				ColumnsPerDay = [4, 4, 4, 4, 4, 4, 4, 4, 4],
@@ -23,7 +23,7 @@ public class Stage01Week01Model : PageModel
 					["BB Seated Shoulder Press", "Lat Pulldown"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "B",
 				ColumnsPerDay = [4, 4, 4],
@@ -38,7 +38,7 @@ public class Stage01Week01Model : PageModel
 					["Deadlift", "Barbell Squat"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "C",
 				ColumnsPerDay = [4, 4, 4],

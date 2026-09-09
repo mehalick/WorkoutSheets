@@ -9,7 +9,7 @@ public class Stage03Week15Model : PageModel
 		WeekRange = new(15, 17),
 		Workouts =
 		[
-			new Workout
+			new()
 			{
 				Letter = "A",
 				ColumnsPerDay = [4, 4, 4],
@@ -19,7 +19,7 @@ public class Stage03Week15Model : PageModel
 					["Thin Tummy", "Curlup (Arms Straight)", "Russian Twist", "Pushup Hold"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "B",
 				ColumnsPerDay = [4, 4, 4],
@@ -29,7 +29,7 @@ public class Stage03Week15Model : PageModel
 					["Toes to Sky", "Curlup (Legs Up)", "Side Raise", "Thin Tummy (Seated)"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "C",
 				ColumnsPerDay = [4, 4, 4],

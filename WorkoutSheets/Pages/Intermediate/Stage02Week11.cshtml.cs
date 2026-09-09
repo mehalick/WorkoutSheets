@@ -9,7 +9,7 @@ public class Stage02Week11Model : PageModel
 		WeekRange = new(11, 13),
 		Workouts =
 		[
-			new Workout
+			new()
 			{
 				Letter = "A",
 				ColumnsPerDay = [6, 6, 6],
@@ -20,7 +20,7 @@ public class Stage02Week11Model : PageModel
 					["Barbell Shrug"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "B",
 				ColumnsPerDay = [6, 6, 6],
@@ -31,7 +31,7 @@ public class Stage02Week11Model : PageModel
 					["DB Hammer Curl"]
 				]
 			},
-			new Workout
+			new()
 			{
 				Letter = "C",
 				ColumnsPerDay = [6, 6, 6],

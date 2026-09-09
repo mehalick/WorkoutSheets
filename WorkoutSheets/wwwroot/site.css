@@ -2,6 +2,12 @@
 	size: portrait;
 }
 
+@media print {
+	thead {
+		display: table-row-group; /* Prevents the header from repeating on new pages */
+	}
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 25px;

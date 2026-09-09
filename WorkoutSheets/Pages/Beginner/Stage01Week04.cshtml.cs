@@ -10,7 +10,7 @@ public class Stage01Week04Model : PageModel
 		PrintSize = PrintSize.Landscape,
 		Workouts =
 		[
-			new Workout
+			new()
 			{
 				Letter = "A",
 				ColumnsPerDay = [4, 4, 4, 4, 4, 4, 4, 4, 4],
